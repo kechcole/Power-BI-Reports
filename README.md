@@ -26,12 +26,13 @@ Also since average delay in arrival & departure both is 15 minutes, thus they mu
 - Step 2 : Load and transform data into Power BI Desktop.
     
     Raw data is always dirty, it must be 'cleaned' before any analysis is done otherwise one is bound to encounter errors and generate incorrect reports. Issues identified in the data after loading include ; unnecessary columns, unfriendly naming convention, and incorrect column data types. Using the Powerful Power query tool, inconsistencies and errors were removed to make the tables organized and intuitive. 
+
+
     
-    a) countypres_results_2000-2020
 
-    Renamed to presidential results, county_fips column changed from integer to text, 
-
-
+Presidential results table               |   counties table   | states table
+:-------------------:|:------------------:|:------------------:
+![](./US_Election_Report\Images\3.transform_pres_results.png)|![](./US_Election_Report\Images\4.transform_counties.png)|![](./US_Election_Report\Images\5.transform_states.png)
     
 
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.

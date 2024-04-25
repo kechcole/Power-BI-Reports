@@ -1,6 +1,6 @@
 # Report 1 : US County Presidential Elections 2002 TO 2020 - Dashboard
 
-### Dashboard Link : 
+### Dashboard Link : https://github.com/kechcole/Power-BI-Reports/blob/main/US_Election_Report/US_County_Election_Report.pbix
 
 ## Problem Statement
 
@@ -16,7 +16,7 @@ Also since average delay in arrival & departure both is 15 minutes, thus they mu
 
 ### Steps followed 
 
-- Step 1 : Data Collection, multiple online sources with free data identified.
+- Step 1 : [Data](https://github.com/kechcole/Power-BI-Reports/tree/main/US_Election_Report/Data) Collection, multiple online sources with free data identified.
    
    a) [US Census Bureau](https://www.census.gov/)
 
@@ -228,6 +228,7 @@ Average delay will change if different visual filters will be applied.
 REFERENCES 
 1. 15 Ways to visualize election data - https://flourish.studio/blog/report-on-elections-with-flourish/
 2. 17 DATA VISUALIZATION TECHNIQUES ALL PROFESSIONALS SHOULD KNOW - https://online.hbs.edu/blog/post/data-visualization-techniques
+3. Markdown Cheetsheet - https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
 
 
 

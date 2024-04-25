@@ -1,0 +1,83 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.28.14-Firenze">
+  <identifier>us_states</identifier>
+  <parentidentifier></parentidentifier>
+  <language>ENG</language>
+  <type>dataset</type>
+  <title>us_states</title>
+  <abstract>This dataset represented the counties of the United States in the 50 states and the District of Columbia. This dataset has been aggregated to represent the 50 states and District of Columbia.
+
+This dataset represents the US state boundaries. The data was derived from data provided by the US Census Bureau.</abstract>
+  <keywords vocabulary="Search keys">
+    <keyword>polygon</keyword>
+    <keyword>area</keyword>
+    <keyword>demographics</keyword>
+    <keyword>United States</keyword>
+    <keyword>U.S. states</keyword>
+    <keyword>states</keyword>
+    <keyword>SpatialDataScience</keyword>
+    <keyword>Esri Training Services</keyword>
+  </keywords>
+  <keywords vocabulary="gmd:topicCategory">
+    <keyword>polygon</keyword>
+    <keyword> area</keyword>
+    <keyword> demographics</keyword>
+    <keyword> population</keyword>
+    <keyword> households</keyword>
+    <keyword> farm information</keyword>
+    <keyword> boundaries</keyword>
+    <keyword> society</keyword>
+  </keywords>
+  <contact>
+    <contactAddress>
+      <type>physical</type>
+      <address>380 New York St</address>
+      <city>Redlands</city>
+      <administrativearea>Ca</administrativearea>
+      <postalcode>92373</postalcode>
+      <country>US</country>
+    </contactAddress>
+    <name>Esri Data Librarian</name>
+    <organization>Esri, Educational Services</organization>
+    <position></position>
+    <voice>909-793-2853 X 1793</voice>
+    <fax></fax>
+    <email>datalibrary@esri.com</email>
+    <role></role>
+  </contact>
+  <links>
+    <link description="" format="" name="" size="" url="" type="" mimeType=""/>
+  </links>
+  <history>ArcUSA 1:25M (source 1 of 6) ESRI, 19920601, ArcUSA™ 1:25M: ESRI, Redlands, California, USA. Type of source media: CD–ROM Source scale denominator: 25000000 Source contribution: Attribute and geospatial data Census SF1 (source 2 of 6) Department of Commerce, Census Bureau, 2001, Summary File 1 (SF1): Summary File 1 (SF1) 2000, Department of Commerce, Census Bureau, USA. Other citation details: The Summary File 1 (SF1) data is based on the 2000 Census of Population. Type of source media: CD–ROM Source contribution: Attribute data ESRI Community Data (source 3 of 6) ESRI, 2001; 200303; 200407; 20050519, 20070606, ESRI Community Data: ESRI® Community™ Data 2007, ESRI, Redlands, California, USA. Online links: http://www.esri.com Other citation details: Currently provides the POP2007 attribute. In the past has provided the POP2005, POP2004, POP2003, and POP2001 attributes and attribute data updates for the new U.S. counties. Type of source media: electronic mail system, CD–ROM, DVD–ROM Source contribution: Attribute data USDA Farm (source 4 of 6) U.S. Department of Agriculture (USDA), National Agricultural Statistics Service (NASS), 199903, 1997 Census of Agriculture: Census of Agriculture 1997, U.S. Department of Agriculture (USDA), National Agricultural Statistics Service (NASS), USA. Other citation details: The farm attributes come from data published by the U.S. Department of Agriculture (USDA), National Agricultural Statistics Service (NASS) based on the 1997 Census of Agriculture. Type of source media: CD–ROM Source contribution: Attribute data Tele Atlas Dynamap/Census Boundaries v4.0 (source 5 of 6) Tele Atlas North America, Inc., 200201, Dynamap/Census Boundaries v4.0: Tele Atlas® Dynamap®/Census Boundaries v4.0, Tele Atlas North America, Inc., Lebanon, New Hampshire, USA. Type of source media: CD–ROM Source scale denominator: 100000 Source contribution: Attribute and geospatial data Tele Atlas Dynamap/2000 v. 14.0 (source 6 of 6) Tele Atlas North America, Inc., 200401, Dynamap/2000 v. 14.0: Tele Atlas® Dynamap®/2000 Version 14.0, Tele Atlas North America, Inc., Lebanon, New Hampshire, USA. Type of source media: CD–ROM Source scale denominator: 100000 Source contribution: Attribute and geospatial data Date: 20020204 (change 1 of 5) The following steps were performed by ESRI for Data &amp; Maps 2002: Updated geospatial data to match Data &amp; Maps 2002 U.S. Counties. Replaced demographic and agricultural attributes with the latest from Census SF1, ESRI Community, and Census of Agriculture. Recreated ArcView GIS legend file (.avl) and ArcGIS® layer file (.lyr). Copied projection file (.prj). The following steps were performed by ESRI: Extracted and generalized the features from ArcUSA 1:25M. Added demographic attributes from Summary Tape File-1A (STF-1A) data published by the U.S. Census Bureau based on the 1990 Census of Population. Added farm attributes from data published by the U.S. Census Bureau based on the 1987 Census of Agriculture. Added Pop2000 attribute from ESRI. Converted to North American Datum of 1983 (NAD83) by splitting the United States into–if present: Alaska, Hawaii, Puerto Rico, U.S. Virgin Islands–and the 48 contiguous states (including District of Columbia); converting each to NAD83; then merging them together. Recalculated any attributes based on area. Added Kalawao county of Hawaii. Created ArcGIS® layer file (.lyr). Created projection file (.prj). Ran ArcView GIS Avenue™ request ExportClean, and created spatial indices. Converted the data set to SDC. Data sources used in this process: ArcUSA 1:25M Census SF1 ESRI Community Data USDA Farm Tele Atlas Dynamap/Census Boundaries v4.0 Date: 20040310 (change 2 of 5) The following steps were performed by ESRI: Updated geospatial data to match Data &amp; Maps 2004 U.S. Counties. Merged county (FIPS: 51560) Clifton Forge, VA into (FIPS: 51005) Alleghany, and updated attribute values for (FIPS: 51005) by combining the two. Added county (FIPS: 08014) Broomfield, CO and adjusted surrounding counties (FIPS: 08001) Adams, (FIPS: 08013) Boulder, (FIPS: 08059) Jefferson, and (FIPS: 08123) Weld. Updated attribute values for all five counties (values provided by ESRI). Used null value -99 in the few places where no new values were provided and we did not have the information. Replaced POP2001 with POP2003 from ESRI. Changed attribute name AREA to SQMI. Converted the data set to SDC. Created the projection file (.prj) and spatial indices. Data sources used in this process: ArcUSA 1:25M Census SF1 ESRI Community Data USDA Farm Tele Atlas Dynamap/Census Boundaries v4.0 Tele Atlas Dynamap/2000 v. 14.0 Date: 20050309 (change 3 of 5) The following steps were performed by ESRI: Moved attribute SQMI to the end of the attributes and rounded its values to the nearest tenth of a mile. Replaced attribute POP2003 with POP2004. Added attribute POP04_SQMI and calculated its values. Data sources used in this process: ESRI Community Data Date: 20060410 (change 4 of 5) The following steps were performed by ESRI: Replaced attribute POP2004 with POP2005 and attribute POP04_SQMI with POP05_SQMI. Calculated new values for attributes POP00_SQMI, POP05_SQMI, and SQMI. Converted the data set to SDC. Created ArcGIS® layer file (.lyr), projection file (.prj), and spatial indices. Data sources used in this process: ESRI Community Data Date: 20070717 (change 5 of 5) The following steps were performed by ESRI: Replaced attribute POP2005 with POP2007 and attribute POP05_SQMI with POP07_SQMI. Calculated new values for POP07_SQMI. Converted the data set to SDC. Created ArcGIS® layer file (.lyr), projection file (.prj), and spatial indices. Data sources used in this process: ESRI Community Data </history>
+  <fees></fees>
+  <constraints type="Limitations of use">None, Census data is licensed as public domain.
+Use of this Data is restricted to training, demonstration, and educational purposes only. This Data cannot be sold or used for marketing without the express written consent of Environmental Systems Research Institute Inc.THE DATA AND RELATED MATERIALS MAY CONTAIN SOME NONCONFORMITIES, DEFECTS, OR ERRORS. ESRI DOES NOT WARRANT THAT THE DATA WILL MEET USER'S NEEDS OR EXPECTATIONS; THAT THE USE OF THE DATA WILL BE UNINTERRUPTED; OR THAT ALL NONCONFORMITIES, DEFECTS, OR ERRORS CAN OR WILL BE CORRECTED. ESRI IS NOT INVITING RELIANCE ON THIS DATA, AND THE USER SHOULD ALWAYS VERIFY ACTUAL DATA.THE DATA AND RELATED MATERIALS ARE PROVIDED "AS-IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.IN NO EVENT SHALL ESRI AND/OR ITS LICENSOR(S) BE LIABLE FOR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOST PROFITS, LOST SALES, OR BUSINESS EXPENDITURES, INVESTMENTS, OR COMMITMENTS IN CONNECTION WITH ANY BUSINESS; LOSS OF ANY GOODWILL; OR FOR ANY INDIRECT, SPECIAL, INCIDENTAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THIS AGREEMENT OR USE OF THE DATA AND RELATED MATERIALS, HOWEVER CAUSED, ON ANY THEORY OF LIABILITY, AND WHETHER OR NOT ESRI OR ITS LICENSOR(S) HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY EXCLUSIVE REMEDY.In the event that the data vendor(s) has (have) granted the end user permission to redistribute the Geodata, please use proper proprietary or copyright attribution for the various data vendor(s), and provide the associated metadata file(s) with the Geodata.
+Data Contact: 
+Training Services Librarian
+Esri, 380 New York Street, Redlands, CA 92373, USA
+DataLibrary@esri.com</constraints>
+  <rights>US Census Bureau</rights>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt>PROJCRS["USA_Contiguous_Equidistant_Conic",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["Degree",0.0174532925199433]]],CONVERSION["USA_Contiguous_Equidistant_Conic",METHOD["Equidistant Conic",ID["EPSG",1119]],PARAMETER["Latitude of false origin",39,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-96,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",33,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",45,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Not known."],AREA["United States (USA) - CONUS onshore - Alabama; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming."],BBOX[24.41,-124.79,49.38,-66.91]],ID["ESRI",102005]]</wkt>
+      <proj4>+proj=eqdc +lat_0=39 +lon_0=-96 +lat_1=33 +lat_2=45 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>27128</srsid>
+      <srid>102005</srid>
+      <authid>ESRI:102005</authid>
+      <description>USA_Contiguous_Equidistant_Conic</description>
+      <projectionacronym>eqdc</projectionacronym>
+      <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial crs="ESRI:102005" minz="0" dimensions="2" miny="24.3963000000000001" maxx="-66.88540000000000418" minx="-124.84900000000000375" maxz="0" maxy="49.38439999999999941"/>
+    <temporal>
+      <period>
+        <start></start>
+        <end></end>
+      </period>
+    </temporal>
+  </extent>
+</qgis>

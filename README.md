@@ -21,6 +21,8 @@ Also since average delay in arrival & departure both is 15 minutes, thus they mu
    a) [US Census Bureau](https://www.census.gov/)
 
    b) [US Department of agriculture](https://www.usda.gov/)
+
+   Spatial data in the shapefile format was simplified in [mapshaper](https://mapshaper.org/) and converted to topo-json format to make it compatible with Power BI. 
 - Step 2 : Load data into Power BI Desktop, multiple formats csv(non-spatial) and geo-json(spatial).
 
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.

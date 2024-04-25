@@ -1,12 +1,13 @@
-# Report 1 : US County Election 2002 TO 2020 - Dashboard
+# Report 1 : US County Presidential Elections 2002 TO 2020 - Dashboard
 
 ### Dashboard Link : 
 
 ## Problem Statement
 
+This dashboard aims at providing exceptional visual reporting of US Presidential Election results, aggregated at county level, from the year 2000 to 2020 using Power BI. Well curated visuals are carefully used to engage the readers effectively and enhance the report. Multiple tools were used to make people easily understand the outcome of elections clearly and concisely. Data is increasing playing a big role in every part of an election cycle, either post-vote or before, underscoring the effects of robust data collection and analysis. Data munging provides critical insights that can be used to predict future trends and make critical decisions guiding strategy and efforts. This increased interdependency help understand political behaviors that is which drive campaign messaging, issues to be addressed and even ideal locations to hold political rallies. 
 
 
-This dashboard helps the airlines understand their customers better. It helps the airlines know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. It also lets them know the average delay & departure time, thus since by using this dashboard they have identified this problem, they can further work on factors responsible for these unwanted delays.
+
 
 Since, number of neutral/dissatisfied customers (almost 57 %) are more than satisfied customers (around 43 %), thus in all they must work on improving their services. 
 
@@ -15,7 +16,9 @@ Also since average delay in arrival & departure both is 15 minutes, thus they mu
 
 ### Steps followed 
 
-- Step 1 : Load data into Power BI Desktop, dataset is a csv file.
+- Step 1 : Data Collection, multiple online sources with free data identified
+- Step 2 : Load data into Power BI Desktop, multiple formats csv(non-spatial) and geo-json(spatial).
+
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
 - Step 4 : It was observed that in none of the columns errors & empty values were present except column named "Arrival Delay".
@@ -215,3 +218,13 @@ Average delay will change if different visual filters will be applied.
 4.2) 30.94 % customers have travel type 'Personal'.
 
         thus, more customers have travel type 'Business'.
+
+
+<!---
+REFERENCES 
+1. 15 Ways to visualize election data - https://flourish.studio/blog/report-on-elections-with-flourish/
+2. 17 DATA VISUALIZATION TECHNIQUES ALL PROFESSIONALS SHOULD KNOW - https://online.hbs.edu/blog/post/data-visualization-techniques
+
+
+
+--->

@@ -16,14 +16,23 @@ Also since average delay in arrival & departure both is 15 minutes, thus they mu
 
 ### Steps followed 
 
-- Step 1 : [Data](https://github.com/kechcole/Power-BI-Reports/tree/main/US_Election_Report/Data) Collection, multiple online sources with free data identified.
+- Step 1 : Extraction. Free and open source [data](https://github.com/kechcole/Power-BI-Reports/tree/main/US_Election_Report/Data) was collected from multiple online sources. Non-spatial data in csv format while spatial data as shapefiles. 
    
    a) [US Census Bureau](https://www.census.gov/)
 
    b) [US Department of agriculture](https://www.usda.gov/)
 
-   Spatial data in the shapefile format was simplified in [mapshaper](https://mapshaper.org/) and converted to topo-json format to make it compatible with Power BI. 
-- Step 2 : Load data into Power BI Desktop, multiple formats csv(non-spatial) and geo-json(spatial).
+   Spatial data was simplified in [mapshaper](https://mapshaper.org/) and converted to topo-json format to make it compatible with Power BI. 
+- Step 2 : Load and transform data into Power BI Desktop.
+    
+    Raw data is always dirty, it must be 'cleaned' before any analysis is done otherwise one is bound to encounter errors and generate incorrect reports. Issues identified in the data after loading include ; unnecessary columns, unfriendly naming convention, and incorrect column data types. Using the Powerful Power query tool, inconsistencies and errors were removed to make the tables organized and intuitive. 
+    
+    a) countypres_results_2000-2020
+
+    Renamed to presidential results, county_fips column changed from integer to text, 
+
+
+    
 
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
@@ -231,6 +240,7 @@ REFERENCES
 1. 15 Ways to visualize election data - https://flourish.studio/blog/report-on-elections-with-flourish/
 2. 17 DATA VISUALIZATION TECHNIQUES ALL PROFESSIONALS SHOULD KNOW - https://online.hbs.edu/blog/post/data-visualization-techniques
 3. Markdown Cheetsheet - https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
+4. Data cleaning and transformation- https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/1-introduction
 
 
 

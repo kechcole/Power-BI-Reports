@@ -32,7 +32,7 @@ Also since average delay in arrival & departure both is 15 minutes, thus they mu
 
 Presidential results table               |   counties table   | states table
 :-------------------:|:------------------:|:------------------:
-![](./US_Election_Report\Images\3.transform_pres_results.png)|![](./US_Election_Report\Images\4.transform_counties.png)|![](./US_Election_Report\Images\5.transform_states.png)
+![](./US_Election_Report/Images/3.transform_pres_results.png)|![](./US_Election_Report/Images/4.transform_counties.png)|![](./US_Election_Report/Images/5.transform_states.png)
     
 
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.

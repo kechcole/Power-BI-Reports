@@ -16,7 +16,11 @@ Also since average delay in arrival & departure both is 15 minutes, thus they mu
 
 ### Steps followed 
 
-- Step 1 : Data Collection, multiple online sources with free data identified
+- Step 1 : Data Collection, multiple online sources with free data identified.
+   
+   a) [US Census Bureau](https://www.census.gov/)
+
+   b) [US Department of agriculture](https://www.usda.gov/)
 - Step 2 : Load data into Power BI Desktop, multiple formats csv(non-spatial) and geo-json(spatial).
 
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.

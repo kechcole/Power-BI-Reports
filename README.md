@@ -35,7 +35,19 @@ Presidential results table               |   counties table   | states table
 ![](./US_Election_Report/Images/3.transform_pres_results.png)|![](./US_Election_Report/Images/4.transform_counties.png)|![](./US_Election_Report/Images/5.transform_states.png)
     
 
-- Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
+- Step 3 : Define Relationships. 
+   
+   A physical relationship between the three tables must be defined to allow manipulation operations such as filter across multiple tables in our model. An active relationship was defined by dragging columns from one table to another containing the same values ultimately linking them. Presidential results table has a many-to-many relationship with counties model based on names but a many-to-one cardinality with states table linked through abbreviations. 
+
+   Cardinality symbolized. 
+   ![Tux, the Linux mascot](./US_Election_Report/Images/6.Relationships.png)
+
+
+
+
+
+   
+    Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
 - Step 4 : It was observed that in none of the columns errors & empty values were present except column named "Arrival Delay".
 - Step 5 : For calculating average delay time, null values were not taken into account as only less than 1% values are null in this column(i.e column named "Arrival Delay") 

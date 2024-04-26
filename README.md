@@ -54,12 +54,15 @@ Presidential results table               |   counties table   | states table
    ![Tux, the Linux mascot](./US_Election_Report/Images/6.Relationships.png)
 
 
-
-
-
-   
  
-- Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
+- Step 4 : Data Visualization.
+        
+  Election data visualized using various metrics turns granular data into understandable, visually compelling and useful information. Hidden patterns are revealed by visually presenting information and connections, simply put it 'bring data to life'. Insights within numbers are laid open through charts, graphs, interactive reports and many more laying the ground network for making informed decisions fast and effectively. 
+
+
+
+
+
 - Step 4 : It was observed that in none of the columns errors & empty values were present except column named "Arrival Delay".
 - Step 5 : For calculating average delay time, null values were not taken into account as only less than 1% values are null in this column(i.e column named "Arrival Delay") 
 - Step 6 : In the report view, under the view tab, theme was selected.
@@ -265,6 +268,7 @@ REFERENCES
 2. 17 DATA VISUALIZATION TECHNIQUES ALL PROFESSIONALS SHOULD KNOW - https://online.hbs.edu/blog/post/data-visualization-techniques
 3. Markdown Cheetsheet - https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
 4. Data cleaning and transformation- https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/1-introduction
+5. Complex Queries - https://www.youtube.com/watch?v=dKvPyhWNjIE
 
 
 

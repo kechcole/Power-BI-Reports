@@ -2,7 +2,32 @@
 
 ### Dashboard Link : https://github.com/kechcole/Power-BI-Reports/blob/main/US_Election_Report/US_County_Election_Report.pbix
 
-## Problem Statement
+# Blog-App
+A social network created using Django framework, the application follows the model-view-controller (MVC) architectural pattern, emphasizing the reusability and pluggability of components i.e class views. 
+
+## Key Features.
+- Object-Relational Mapping (ORM)
+- Admin Interface Development
+- URL routing
+- Form Handling
+- Authentication and Authorization
+- Security using Cross Site Request Forgery
+- Templates Design
+
+
+## **Table of Contents**
+1. [Problem Statement.](#1-problem-statement)
+2. [Data Extraction.](#2-data-extraction)
+3. [Load and Transform Data.](#3-load-and-transform-data)
+4. [Database Management.](#4-database-management)
+5. [User Registration.](#5-user-registration)
+6. [User Authentication.](#6-user-authentication-system)
+7. [User Profile](#7-enhance-user-profile)
+8. [Forms](#8-upload-changes-in-profile-page)
+9. [User Post](#9-design-user-post)
+8. [](#)
+
+## 1. Problem Statement
 
 This dashboard aims at providing exceptional visual reporting of US Presidential Election results, aggregated at county level, from the year 2000 to 2020 using Power BI. Well curated visuals are carefully used to engage the readers effectively and enhance the report. Multiple tools were used to make people easily understand the outcome of elections clearly and concisely. Data is increasing playing a big role in every part of an election cycle, either post-vote or before, underscoring the effects of robust data collection and analysis. Data munging provides critical insights that can be used to predict future trends and make critical decisions guiding strategy and efforts. This increased interdependency help understand political behaviors that is which drive campaign messaging, issues to be addressed and even ideal locations to hold political rallies. 
 
@@ -14,28 +39,26 @@ Since, number of neutral/dissatisfied customers (almost 57 %) are more than sati
 Also since average delay in arrival & departure both is 15 minutes, thus they must try to reduce it.
 
 
-### Steps followed 
+## 2. Data Extraction.
 
-- Step 1 : Extraction. Free and open source [data](https://github.com/kechcole/Power-BI-Reports/tree/main/US_Election_Report/Data) was collected from multiple online sources. Non-spatial data in csv format while spatial data as shapefiles. 
+Free and open source [data](https://github.com/kechcole/Power-BI-Reports/tree/main/US_Election_Report/Data) was collected from multiple online sources. Non-spatial data in csv format while spatial data as shapefiles. 
    
    a) [US Census Bureau](https://www.census.gov/)
 
    b) [US Department of agriculture](https://www.usda.gov/)
 
    Spatial data was simplified in [mapshaper](https://mapshaper.org/) and converted to topo-json format to make it compatible with Power BI. 
-- Step 2 : Load and transform data into Power BI Desktop.
+## 3. Load and transform data.
     
-    Raw data is always dirty, it must be 'cleaned' before any analysis is done otherwise one is bound to encounter errors and generate incorrect reports. Issues identified in the data after loading include ; unnecessary columns, unfriendly naming convention, and incorrect column data types. Using the Powerful Power query tool, inconsistencies and errors were removed to make the tables organized and intuitive. 
+Raw data is always dirty, it must be 'cleaned' before any analysis is done otherwise one is bound to encounter errors and generate incorrect reports. Issues identified in the data after loading include ; unnecessary columns, unfriendly naming convention, and incorrect column data types. Using the Powerful Power query tool, inconsistencies and errors were removed to make the tables organized and intuitive. 
 
-
-    
-
+Data transformation steps 
 Presidential results table               |   counties table   | states table
 :-------------------:|:------------------:|:------------------:
 ![](./US_Election_Report/Images/3.transform_pres_results.png)|![](./US_Election_Report/Images/4.transform_counties.png)|![](./US_Election_Report/Images/5.transform_states.png)
 
 
-   Column quality after cleaning and transformation 
+   Presidential results table column quality after cleaning and transformation 
    ![Tux, the Linux mascot](./US_Election_Report/Images/5.1Column%20quality.png)
 
 
@@ -46,18 +69,22 @@ Presidential results table               |   counties table   | states table
 
          
 
-- Step 3 : Define Relationships. 
+## 4. Define Relationships.
    
-   A physical relationship between the three tables must be defined to allow manipulation operations such as filter across multiple tables in our model. An active relationship was defined by dragging columns from one table to another containing the same values ultimately linking them together. Presidential results table has a many-to-many relationship with counties model based on names but a many-to-one cardinality with states table linked through abbreviations. 
+A physical relationship between the three tables must be defined to allow manipulation operations such as filter across multiple tables in our model. An active relationship was defined by dragging columns from one table to another containing the same values ultimately linking them together. Presidential results table has a many-to-many relationship with counties model based on names but a many-to-one cardinality with states table linked through abbreviations. 
 
-   Cardinality symbolized. 
-   ![Tux, the Linux mascot](./US_Election_Report/Images/6.Relationships.png)
+Cardinality symbolized. 
+![Screenshot of model view](./US_Election_Report/Images/6.Relationships.png)
 
 
  
-- Step 4 : Data Visualization.
+## 5. Data Visualization.
         
-  Election data visualized using various metrics turns granular data into understandable, visually compelling and useful information. Hidden patterns are revealed by visually presenting information and connections, simply put it 'bring data to life'. Insights within numbers are laid open through charts, graphs, interactive reports and many more laying the ground network for making informed decisions fast and effectively. 
+  Election data visualized using various metrics turns granular data into understandable, visually compelling and useful information. Hidden patterns are revealed by visually presenting information and connections, simply put it 'brings data to life'. Insights within numbers are laid open through charts, graphs, interactive reports and many more laying the ground network for making informed decisions fast and effectively.
+
+  I am interested in top two candidates for each constituency, to achieve this we need to aggregate data presidential votes, sort them and select the only the top two.  
+  
+  
 
 
 
@@ -268,7 +295,7 @@ REFERENCES
 2. 17 DATA VISUALIZATION TECHNIQUES ALL PROFESSIONALS SHOULD KNOW - https://online.hbs.edu/blog/post/data-visualization-techniques
 3. Markdown Cheetsheet - https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
 4. Data cleaning and transformation- https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/1-introduction
-5. Complex Queries - https://www.youtube.com/watch?v=dKvPyhWNjIE
+5. Complex Power BI Queries - https://www.youtube.com/watch?v=dKvPyhWNjIE
 
 
 

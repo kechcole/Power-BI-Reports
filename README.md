@@ -59,11 +59,17 @@ Cardinality symbolized.
         
 Election data visualized using various metrics turns granular data into understandable, visually compelling and useful information. Hidden patterns are revealed by visually presenting information and connections, simply put it 'brings data to life'. Insights within numbers are laid open through charts, graphs, interactive reports and many more laying the ground network for making informed decisions fast and effectively.
 
-I am interested in top two candidates for each state, to achieve this, we need to aggregate presidential votes across counties, sort them and select the only the top two. 
+I am interested in top two candidates for each state in the four elections, to achieve this, we need to aggregate presidential votes across counties, sort them and select the only the top two. 
 
 
-### 5.1 Aggregate Results.
-Rows from county table were condensed into a single value by grouping county id variable then finding the sum of candidate votes column in presidential results model.
+### 5.1 Aggregate Results With Partition Logic.
+Rows from county table were condensed into a single value by grouping counties then finding the sum of total candidate votes. This will allow for effective computation and generating summary information in the future when distilling models. 
+
+Partitioning. 
+![Screenshot of group by function](./US_Election_Report/Images/7.1Group_by_county.png)
+
+Output table containing total votes in each county.  
+![Screenshot of new table](./US_Election_Report/Images/7.2Output_Table_Partitioning.png)
   
   
 

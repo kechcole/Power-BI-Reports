@@ -18,19 +18,12 @@
 
 ## 1. Problem Statement
 
-This dashboard aims at providing exceptional visual reporting of US Presidential Election results, aggregated at county level, from the year 2000 to 2020 using Power BI. Well curated visuals are carefully used to engage the readers effectively and enhance the report. Multiple tools were used to make people easily understand the outcome of elections clearly and concisely. Data is increasing playing a big role in every part of an election cycle, either post-vote or before, underscoring the effects of robust data collection and analysis. Data munging provides critical insights that can be used to predict future trends and make critical decisions guiding strategy and efforts. This increased interdependency help understand political behaviors that is which drive campaign messaging, issues to be addressed and even ideal locations to hold political rallies. 
-
-
-
-
-Since, number of neutral/dissatisfied customers (almost 57 %) are more than satisfied customers (around 43 %), thus in all they must work on improving their services. 
-
-Also since average delay in arrival & departure both is 15 minutes, thus they must try to reduce it.
+This dashboard aims at providing exceptional visual reporting of US Presidential Election results from the year 2000 to 2020 using Power BI. Well curated visuals are carefully used to engage the readers effectively and enhance the report. Multiple tools were used to make people easily understand the outcome of elections clearly and concisely. Data is increasing playing a big role in every part of an election cycle, either post-vote or before, underscoring the effects of robust data collection and analysis. Data munging provides critical insights that can be used to predict future trends and make critical decisions guiding strategy and efforts. This increased interdependency help understand political behaviors that is which drive campaign messaging, issues to be addressed and even ideal locations to hold political rallies. 
 
 
 ## 2. Data Extraction.
 
-Free and open source [data](https://github.com/kechcole/Power-BI-Reports/tree/main/US_Election_Report/Data) was collected from multiple online sources. Non-spatial data in csv format while spatial data as shapefiles. 
+Free and [open source data](https://github.com/kechcole/Power-BI-Reports/tree/main/US_Election_Report/Data) was collected from multiple online sources. Non-spatial data in csv format while spatial data as shapefiles. 
    
    a) [US Census Bureau](https://www.census.gov/)
 
@@ -51,11 +44,6 @@ Presidential results table               |   counties table   | states table
    ![Tux, the Linux mascot](./US_Election_Report/Images/5.1Column%20quality.png)
 
 
-
-
-    
-
-
          
 
 ## 4. Define Relationships.
@@ -71,12 +59,11 @@ Cardinality symbolized.
         
 Election data visualized using various metrics turns granular data into understandable, visually compelling and useful information. Hidden patterns are revealed by visually presenting information and connections, simply put it 'brings data to life'. Insights within numbers are laid open through charts, graphs, interactive reports and many more laying the ground network for making informed decisions fast and effectively.
 
-I am interested in top two candidates for each constituency, to achieve this, we need to aggregate presidential votes, sort them and select the only the top two. 
+I am interested in top two candidates for each state, to achieve this, we need to aggregate presidential votes across counties, sort them and select the only the top two. 
 
 
 ### 5.1 Aggregate Results.
-Rows from county table were condensed into a single value   
- 
+Rows from county table were condensed into a single value by grouping county id variable then finding the sum of candidate votes column in presidential results model.
   
   
 

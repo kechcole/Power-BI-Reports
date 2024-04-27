@@ -1,26 +1,15 @@
-# Report 1 : US County Presidential Elections 2002 TO 2020 - Dashboard
+# Report 1 : US Presidential Elections 2002 TO 2020 - Dashboard
 
 ### Dashboard Link : https://github.com/kechcole/Power-BI-Reports/blob/main/US_Election_Report/US_County_Election_Report.pbix
 
-# Blog-App
-A social network created using Django framework, the application follows the model-view-controller (MVC) architectural pattern, emphasizing the reusability and pluggability of components i.e class views. 
-
-## Key Features.
-- Object-Relational Mapping (ORM)
-- Admin Interface Development
-- URL routing
-- Form Handling
-- Authentication and Authorization
-- Security using Cross Site Request Forgery
-- Templates Design
 
 
 ## **Table of Contents**
 1. [Problem Statement.](#1-problem-statement)
 2. [Data Extraction.](#2-data-extraction)
 3. [Load and Transform Data.](#3-load-and-transform-data)
-4. [Database Management.](#4-database-management)
-5. [User Registration.](#5-user-registration)
+4. [Define Relationships.](#4-define-relationships)
+5. [Data Visualization.](#5-data-visualization)
 6. [User Authentication.](#6-user-authentication-system)
 7. [User Profile](#7-enhance-user-profile)
 8. [Forms](#8-upload-changes-in-profile-page)
@@ -80,9 +69,14 @@ Cardinality symbolized.
  
 ## 5. Data Visualization.
         
-  Election data visualized using various metrics turns granular data into understandable, visually compelling and useful information. Hidden patterns are revealed by visually presenting information and connections, simply put it 'brings data to life'. Insights within numbers are laid open through charts, graphs, interactive reports and many more laying the ground network for making informed decisions fast and effectively.
+Election data visualized using various metrics turns granular data into understandable, visually compelling and useful information. Hidden patterns are revealed by visually presenting information and connections, simply put it 'brings data to life'. Insights within numbers are laid open through charts, graphs, interactive reports and many more laying the ground network for making informed decisions fast and effectively.
 
-  I am interested in top two candidates for each constituency, to achieve this we need to aggregate data presidential votes, sort them and select the only the top two.  
+I am interested in top two candidates for each constituency, to achieve this, we need to aggregate presidential votes, sort them and select the only the top two. 
+
+
+### 5.1 Aggregate Results.
+Rows from county table were condensed into a single value   
+ 
   
   
 

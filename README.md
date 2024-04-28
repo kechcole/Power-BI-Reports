@@ -63,13 +63,13 @@ I am interested in top two candidates for each state in the four elections, to a
 
 
 ### 5.1 Aggregate Results With Partition Logic.
-With power query, rows were summarized into a table and placed on a column named **CandidatesDetail** by grouping the values by year, state, and candidate columns. This will allow for effective computation and generating summary information in the future when distilling models. Now to find the top two candidates, winner and runners-up, we simply sort the new table by candidate votes column and then filter the top two rows. 
+With power query, rows were summarized into a table and placed on a column named **CandidatesDetail** by grouping the values by year and state columns. This will allow for effective computation and generating summary information in the future when distilling models. Now to find the top two candidates, winner and runners-up, we simply sort the new table by candidate votes column and then filter the top two rows. 
 
 Partitioning. 
-![Screenshot of group by function](./US_Election_Report/Images/7.1Group_by_opertation.png)
+![Screenshot of group by function](./US_Election_Report/Images/7.1GroupByOperation.png)
 
-Output table sample containing total votes for Al-Gore in each state for the year 2000.  
-![Screenshot of new table](./US_Election_Report/Images/7.2Output_Table_Sample.png)
+Output table sample containing candidates votes for Alabama State for the year 2000.  
+![Screenshot of new table](./US_Election_Report/Images/7.2OutputTableSample.png)
   
   
 
@@ -283,6 +283,7 @@ REFERENCES
 3. Markdown Cheetsheet - https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
 4. Data cleaning and transformation- https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/1-introduction
 5. Complex Power BI Queries - https://www.youtube.com/watch?v=dKvPyhWNjIE
+6. Ghanas Election Dashboard Sample - https://www.youtube.com/watch?v=WdrkkmXu1n8
 
 
 

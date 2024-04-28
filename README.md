@@ -95,7 +95,7 @@ Table.MaxN([CandidateDetails],"candidatevotes",1)
 Winner table 
 ![Screenshot of winner candidate table and column](./US_Election_Report/Images/8.1Winner_candidate.png)
 
-Using a join operation between the winners table and runner_up table(second duplicate), second runners up name were filtered out. A merge query logic(left anti join) returns rows in the right table(winners table) that have no matching records in the left table based on candidate name and county id columns(both must be selected in merge pane). Contestants who came second are in the right table but not in winners model, thus were placed in runner up table. 
+Using a join operation between the winners table and **runner_up** table(second duplicate), second runners up name were filtered out. A merge query logic(left anti join) returns rows in the right table(winners table) that have no matching records in the left table based on candidate name and county id columns(both must be selected in merge pane). Contestants who came second are in the right table but not in winners model, thus were placed in runner up table. 
 
 Merge Query pane  
 ![Screenshot of merge query pane](./US_Election_Report/Images/8.2MergeOperation.png)
@@ -103,6 +103,16 @@ Not that half of the records(19757) were selected because in each county contain
 
 Merge operation output containing runner up candidates column
 ![Screenshot of merge query pane](./US_Election_Report/Images/8.3RunnerUp_candidates.png)
+
+Finally we need to synchronize the two queries so as to have important candidate information, both winners and runners up in all counties in single sheet of paper. This avoids duplication of information and optimizes performance of our model by reading data from a single source, **merged_data** table. 
+
+A duplicate of winner table was created all columns removed except ones containing county id, year and state abbreviation. This was the merged with **runner_up** table to get first and second candidate data both in the same table. 
+
+Merged data table
+![Screenshot of merge query pane](./US_Election_Report/Images/9.1MERGED_DATA_GIF.gif)
+
+
+The two previous tables containing winners and second place competitor can be deleted. 
 
   
   

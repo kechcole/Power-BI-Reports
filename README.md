@@ -68,11 +68,17 @@ With power query, rows were summarized into a table and placed on a column named
 Partitioning. 
 ![Screenshot of group by function](./US_Election_Report/Images/7.1GroupByOperation.png)
 
-New CandidatesDetail column within presidential results model.
+New CandidatesDetail column within presidential results model containing summarized tables.
 ![Screenshot of new column](./US_Election_Report/Images/7.3NewColumn.png)
 
-Output table sample containing candidates votes in Alabama State for the year 2000.  
-![Screenshot of new table](./US_Election_Report/Images/7.2OutputTableSample.png)
+Formula that creates a second custom column containing tables with only top 2 candidates
+```
+Table.MaxN([CandidateDetails],"candidatevotes",2)
+```
+![Screenshot of new table](./US_Election_Report/Images/7.3FilterOperation.png)
+
+Output table sample containing top 2 candidates in Arizona State for the year 2000.  
+![Screenshot of Top2 candidates table](./US_Election_Report/Images/7.4Top2CandidateTable.png)
 
 
   

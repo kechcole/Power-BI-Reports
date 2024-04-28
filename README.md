@@ -112,10 +112,7 @@ Merged data table
 ![Screenshot of merge query pane](./US_Election_Report/Images/9.1MERGED_DATA_GIF.gif)
 
 
-Merged data table
-![Screenshot of merge query pane](./US_Election_Report/Images/9.3.gif)
 
-<img src=https://imgflip.com/gif/8ob9jf>
 
 
 The two previous tables containing winners and second place competitor can be deleted. 

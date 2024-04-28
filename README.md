@@ -63,13 +63,13 @@ I am interested in top two candidates for each state in the four elections, to a
 
 
 ### 5.1 Aggregate Results With Partition Logic.
-Rows from county table were condensed into a single value by grouping counties then finding the sum of total candidate votes. This will allow for effective computation and generating summary information in the future when distilling models. 
+With power query, rows were summarized into a table and placed on a column named **CandidatesDetail** by grouping the values by year, state, and candidate columns. This will allow for effective computation and generating summary information in the future when distilling models. Now to find the top two candidates, winner and runners-up, we simply sort the new table by candidate votes column and then filter the top two rows. 
 
 Partitioning. 
-![Screenshot of group by function](./US_Election_Report/Images/7.1Group_by_county.png)
+![Screenshot of group by function](./US_Election_Report/Images/7.1Group_by_opertation.png)
 
-Output table containing total votes in each county.  
-![Screenshot of new table](./US_Election_Report/Images/7.2Output_Table_Partitioning.png)
+Output table sample containing total votes for Al-Gore in each state for the year 2000.  
+![Screenshot of new table](./US_Election_Report/Images/7.2Output_Table_Sample.png)
   
   
 

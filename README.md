@@ -211,7 +211,7 @@ Merge operation output containing runner-up candidates column
 
 Finally, we need to synchronize the two queries so as to have important candidate information, both winners and runners-up in all counties, on a single sheet of paper. This avoids duplication of information and optimizes the performance of our model by reading data from a single source, the **merged_data** table.
 
-A duplicate of the winner table was created, and all columns were removed except *county id, year* and *state abbreviation* columns. This was merged with the **runner_up** table to get first and second candidate data both in the same table.
+A duplicate of the winner table was created, and all columns were removed except *county id, year* and *state abbreviation* columns. This was merged with the **runner_up** table to get first and second candidate data both in the same table using inner join operation where only row matching in both tables are retained. We now have winner and second placed candidates in one table but different columns. 
 
 Merged data table
 ![Screenshot of merge query pane](./US_Election_Report/Images/9.1MERGED_DATA_GIF.gif)

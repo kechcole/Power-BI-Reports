@@ -68,7 +68,7 @@ With power query, rows were summarized into a table and placed on a column named
 Partitioning. 
 ![Screenshot of group by function](./US_Election_Report/Images/7.1GroupByOperation.png)
 
-Output table sample containing candidates votes for Alabama State for the year 2000.  
+Output table sample containing candidates votes in Alabama State for the year 2000.  
 ![Screenshot of new table](./US_Election_Report/Images/7.2OutputTableSample.png)
   
   

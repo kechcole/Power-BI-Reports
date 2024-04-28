@@ -120,8 +120,6 @@ Merged data table
 
 The two previous tables containing winners and second place competitor can be deleted. 
 
-  
-  
 
 
 
@@ -239,6 +237,10 @@ A card visual was used to represent count of customers.
 
  
 ![Dashboard_upload](https://user-images.githubusercontent.com/102996550/174074051-4f08287a-0568-4fdf-8ac9-6762e0d8fa94.jpg)
+
+
+
+
 
 # Insights
 

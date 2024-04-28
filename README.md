@@ -77,6 +77,9 @@ Table.MaxN([CandidateDetails],"candidatevotes",2)
 ```
 ![Screenshot of new table](./US_Election_Report/Images/7.3FilterOperation.png)
 
+New table from second custom column
+![Screenshot of new table](./US_Election_Report/Images/7.31NewColumn.png)
+
 Output table sample containing top 2 candidates in Arizona State for the year 2000.  
 ![Screenshot of Top2 candidates table](./US_Election_Report/Images/7.4Top2CandidateTable.png)
 

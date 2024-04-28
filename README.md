@@ -87,7 +87,7 @@ Output table sample containing top 2 candidates in Arizona State for the year 20
 
 ### 5.2 Queries Determining Winner and Runner-Up.
 
-Finding the top two candidates and placing them in their own column by filtering them from tables in our next goal. We will duplicate the previous query(complete with its steps) twice then have a column containing candidates we need. In the first duplicate, **winners**, the winner can easily be identified by changing *Top2Candidate* column formula to select only the top candidate and then expanding to show names.   
+Finding the top two candidates and placing them in their own column by filtering them from tables in our next goal. We will duplicate the previous query(complete with its steps) twice then have a column containing candidates we need. In the first duplicate, **winners**, the winner can easily be identified by changing *Top2Candidate* column formula to select only the top candidate and then expanding.   
 
 ```
 Table.MaxN([CandidateDetails],"candidatevotes",1)
@@ -95,13 +95,14 @@ Table.MaxN([CandidateDetails],"candidatevotes",1)
 Winner table 
 ![Screenshot of winner candidate table and column](./US_Election_Report/Images/8.1Winner_candidate.png)
 
-Using a join operation between the winners table and runner_up table(second duplicate), second runners up name were filtered out. A left anti join returns rows in the right table(winners table) that have no matching records in the left table based on candidate name and county id columns(both must be selected in merge pane). Contestants who came second are in the right table but not in winners model, thus were placed in runner up table. 
+Using a join operation between the winners table and runner_up table(second duplicate), second runners up name were filtered out. A merge query logic(left anti join) returns rows in the right table(winners table) that have no matching records in the left table based on candidate name and county id columns(both must be selected in merge pane). Contestants who came second are in the right table but not in winners model, thus were placed in runner up table. 
 
 Merge Query pane  
 ![Screenshot of merge query pane](./US_Election_Report/Images/8.2MergeOperation.png)
+Not that half of the records(19757) were selected because in each county contains two candidates but only the second one matches the join.  
 
-Merge operation output containing runner up candidates
-![Screenshot of merge query pane](./US_Election_Report/Images/8.1RunnerUp_candidates.png)
+Merge operation output containing runner up candidates column
+![Screenshot of merge query pane](./US_Election_Report/Images/8.3RunnerUp_candidates.png)
 
   
   

@@ -8,13 +8,9 @@
 1. [Problem Statement.](#1-problem-statement)
 2. [Data Extraction.](#2-data-extraction)
 3. [Load and Transform Data.](#3-load-and-transform-data)
-4. [Define Relationships.](#4-define-relationships)
+4. [Data Modelling.](#4-data-modelling)
 5. [Data Visualization.](#5-data-visualization)
-6. [User Authentication.](#6-user-authentication-system)
-7. [User Profile](#7-enhance-user-profile)
-8. [Forms](#8-upload-changes-in-profile-page)
-9. [User Post](#9-design-user-post)
-8. [](#)
+
 
 ## 1. Problem Statement
 This dashboard aims at providing exceptional visual reporting of US presidential election results from 2000 to 2020 using Power BI. Well-curated visuals are carefully used to engage the readers effectively and enhance the report. Multiple tools were used to make people easily understand the outcome of elections clearly and concisely. Data is increasingly playing a big role in every part of an election cycle, either post-vote or before, underscoring the effects of robust data collection and analysis. Data munging provides critical insights that can be used to predict future trends and make critical decisions guiding strategy and efforts. This increased interdependency helps understand political behaviors, which drive campaign messaging, issues to be addressed, and even ideal locations to hold political rallies.
@@ -45,7 +41,7 @@ Presidential results table               |   counties table   | states table
 
          
 
-## 4. Define Relationships.
+## 4. Data Modelling.
    
 A physical relationship between the three tables must be defined to allow manipulation operations such as filtering across multiple tables in our model. An active relationship was defined by dragging columns from one table to another containing the same values, ultimately linking them together. The presidential results table has a many-to-many relationship with counties model based on names but a many-to-one cardinality with states table linked through abbreviations columns.
 
@@ -111,10 +107,22 @@ Merged data table
 ![Screenshot of merge query pane](./US_Election_Report/Images/9.1MERGED_DATA_GIF.gif)
 
 
+### 5.3 Visuals.
 
 
+#### 5.3.1 Table.
 
-The two previous tables containing winners and second place competitors can be deleted.
+#### 5.3.2 Card.
+Multiple card visuals were designed to display key performance indicators that align with our goals and objectives. Card visuals use a single value to represent important metrics such as total votes, difference between winner and runner-up, and winner name. DAX functions were used to calculate metrics used in these cards.  
+
+A card for displaying total votes cast each year needed new measure. 
+```
+Total Votes = CALCULATE(SUM(merged_data[VOTER TURN OUT]))
+```
+
+#### 5.3.3 Slicer
+
+
 
 
 

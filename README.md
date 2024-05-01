@@ -142,6 +142,15 @@ Various Card Visuals
 
 
 ## 5. Results.
+The analysis results are summarized as follows 
+
+1. 
+2. 
+3.
+4.
+
+
+The final report looks as follows 
 
 ![Screenshot](./US_Election_Report/Images/10.1Report.png)
 

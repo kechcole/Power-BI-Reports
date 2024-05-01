@@ -120,7 +120,23 @@ A card for displaying total votes cast each year needed new measure.
 Total Votes = CALCULATE(SUM(merged_data[VOTER TURN OUT]))
 ```
 
+Various Card Visuals
+![Screenshot](./US_Election_Report/Images/9.1Card.png)
+
+#### 5.3.4 Pie Chart
+![Screenshot](./US_Election_Report/Images/9.4PieChart.png)
+
+#### 5.3.5 Choropleth Map.
+![Screenshot](./US_Election_Report/Images/9.4PieChart.png)
+
+
+#### 5.3.3 Q & A. 
+![Screenshot](./US_Election_Report/Images/9.6Q&A.png)
+
+
 #### 5.3.3 Slicer
+![Screenshot](./US_Election_Report/Images/9.7Slicer.png)
+
 
 
 

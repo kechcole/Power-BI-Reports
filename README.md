@@ -138,6 +138,11 @@ Various Card Visuals
 ![Screenshot](./US_Election_Report/Images/9.7Slicer.png)
 
 
+## 5. Report.
+
+![Screenshot](./US_Election_Report/Images/10.1Report.png)
+
+
 
 
 

@@ -141,7 +141,7 @@ Various Card Visuals
 ![Screenshot](./US_Election_Report/Images/9.7Slicer.png)
 
 
-## 5. Results.
+## 6. Results.
 The analysis results are summarized as follows 
 
 1. 
@@ -155,7 +155,21 @@ The final report looks as follows
 ![Screenshot](./US_Election_Report/Images/10.1Report.png)
 
 
-## 5. Recommendation. 
+## 7. Recommendation. 
+Based on the analysis, its recommended that ;
+
+-
+-
+-
+-
+
+## 8. Recommendation. 
+
+- Missing values. Some data had null values i.e missing candidate name, unavailable county name  
+- Inadequate data. Data for Alaska and Hawaii was not found. 
+- Data filtering. Some candidate and parties were excluded from the research as focus was on only the top two. 
+- Spatial data of states was simplified. 
+
 
 
 

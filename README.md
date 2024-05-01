@@ -16,6 +16,8 @@
 This dashboard aims at providing exceptional visual reporting of US presidential election results from 2000 to 2020 using Power BI. Well-curated visuals are carefully used to engage the readers effectively and enhance the report. Multiple tools were used to make people easily understand the outcome of elections clearly and concisely. Data is increasingly playing a big role in every part of an election cycle, either post-vote or before, underscoring the effects of robust data collection and analysis. Data munging provides critical insights that can be used to predict future trends and make critical decisions guiding strategy and efforts. This increased interdependency helps understand political behaviors, which drive campaign messaging, issues to be addressed, and even ideal locations to hold political rallies.
 
 
+
+
 ## 2. Data Extraction.
 
 Free and [open source data](https://github.com/kechcole/Power-BI-Reports/tree/main/US_Election_Report/Data) was collected from multiple online sources. Non-spatial data was in CSV format, while spatial data was in shapefiles.
@@ -80,7 +82,7 @@ Output table sample containing top 2 candidates in Arizona State for the year 20
 ![Screenshot of Top2 candidates table](./US_Election_Report/Images/7.4Top2CandidateTable.png)
 
 
-### 5.2 Queries Determining Winner and Runner-Up.
+### 5.2 Merge Queries Determining Winner and Runner-Up.
 
 Finding the top two candidates and placing them in their own column by filtering them from tables in our next goal. We will duplicate the previous query (complete with its steps) twice and then have a column containing the candidates we need. In the first duplicate, **winners**, the winner can easily be identified by changing *Top2Candidate* column formula to select only the top candidate and then expanding. 
 
@@ -111,6 +113,7 @@ Merged data table
 
 
 #### 5.3.1 Table.
+![Screenshot](./US_Election_Report/Images/9.5Table.png)
 
 #### 5.3.2 Card.
 Multiple card visuals were designed to display key performance indicators that align with our goals and objectives. Card visuals use a single value to represent important metrics such as total votes, difference between winner and runner-up, and winner name. DAX functions were used to calculate metrics used in these cards.  
@@ -138,10 +141,12 @@ Various Card Visuals
 ![Screenshot](./US_Election_Report/Images/9.7Slicer.png)
 
 
-## 5. Report.
+## 5. Results.
 
 ![Screenshot](./US_Election_Report/Images/10.1Report.png)
 
+
+## 5. Recommendation. 
 
 
 

@@ -15,6 +15,18 @@
 ## 1. Problem Statement
 This dashboard aims at providing exceptional visual reporting of US presidential election results from 2000 to 2020 using Power BI. Well-curated visuals are carefully used to engage the readers effectively and enhance the report. Multiple tools were used to make people easily understand the outcome of elections clearly and concisely. Data is increasingly playing a big role in every part of an election cycle, either post-vote or before, underscoring the effects of robust data collection and analysis. Data munging provides critical insights that can be used to predict future trends and make critical decisions guiding strategy and efforts. This increased interdependency helps understand political behaviors, which drive campaign messaging, issues to be addressed, and even ideal locations to hold political rallies.
 
+SQL Project Idea: This project will guide you through using SQL in the Jupyter python notebook. You will learn how to use SQL to answer the following analytical questions:
+
+Which countY has the highest voter turn out population?
+
+Who was the leading candidate in all the years ?
+
+Which are the swing counties ?
+
+Which county has an extraordinary number for the voter population?
+
+
+
 
 
 
